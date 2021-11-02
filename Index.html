@@ -4,9 +4,78 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- This default stylesheet/сброс стандартных настроек  -->
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- Global project settings/общие настройки -->
+  <link rel="stylesheet" href="css/globals.css">
+  <!-- Setting for gadget/для гаджетов -->
+  <link rel="stylesheet" href="css/media queries.css">
+  <!-- Basic stylse/основные стили-->
+  <link rel="stylesheet" href="css/main.css">
+
   <title>Document</title>
 </head>
 <body>
-  
+  <!-- Header-page start -->
+  <!-- here is the logo, menu(nav), phone, burger -->
+  <header class="header">
+    <div class="header__container container">
+      <!-- logo -->
+      <div class="logo">
+        <a href="#" class="logo--img">
+          <picture width="46" height="46">
+            <source srcset="logo/logo.svg" type="image/svg">
+            <img src="logo/logo.png" alt="myImage" class="logo__img">
+          </picture>
+        </a>
+      </div>
+      <!-- Menu (nav) -->
+      <nav class="menu">
+        <ul>
+          <li class="menu__item"><a href="#" class="">Главная</a></li>
+          <li class="menu__item"><a href="#" class="">Основное меню</a>
+            <!-- Submenu -->
+            <ul>
+              <li class="menu__subitem menu__item">
+                <a href="#" class="">Заказать вёрстку</a></li>
+              <li class="menu__subitem menu__item">
+                <a href="#" class="">Отправить макет на проверку</a></li>
+              <li class="menu__subitem menu__item">
+                <a href="#" class="">Хочу работать у вас</a></li>
+              <li class="menu__subitem menu__item">
+                <a href="#" class="">Есть предложение по работе с клиентами</a>
+                <!-- submenu-adge -->
+                  <ul>
+                    <li class="menu__subitem--edge menu__subitem menu__item">
+                      <a href="#" class="">У меня есть оффер</a></li>
+                    <li class="menu__subitem--edge menu__subitem menu__item">
+                      <a href="#" class="">Сделать партнёром</a></li>
+                  </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item"><a href="#" class="">Наши сервисы</a></li>
+          <li class="menu__item"><a href="#" class="">Контакты</a></li>
+        </ul>
+      </nav>
+      <!-- phone -->
+      <div class="phone">
+        <img src="icon/phone.svg" alt="">
+        <a href="tel.+13212223333" class="phone__number">+1 (321) 222 - 33 -33</a>
+      </div>
+      <!-- burger -->
+        <button class="header__burger">
+          <a href="#" class="burger--back"></a>
+        </button>
+    </div>
+  </header>
+  <!-- Header-page end -->
+  <section class="top-blok">
+    <div class="container">
+      <!-- Lama -->
+    </div>
+  </section>
+
 </body>
 </html>

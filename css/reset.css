@@ -34,6 +34,7 @@ abbr,acronym{
 }
 a{
 	text-decoration:none;
+	color: #FAFAFA;
 }
 a:active,a:focus{
 	outline:none;

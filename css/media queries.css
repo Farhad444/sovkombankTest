@@ -1,44 +1,21 @@
-Media Queries
+@media(max-width:1024px){
+	.menu{
+		/* display: none; */
+		transition: all 1s;
 
-/* Standard desktop  */
-/* @media(max-width:1920px){
-	:root{
-		--content-padding:4rem;
 	}
-
-} */
-
-/* Old desktop or large scaled UI */
-/* @media(max-width:1280px){
-	:root{
-		font-size:8px;
+	.header__burger{
+		display: block;
 	}
-
-} */
-
-/* Tablet landscape */
-/* @media(max-width:1024px){
-	:root{
-		font-size:10px;
-		--content-width:100%;
-		--content-padding:2rem;
+	.header__burger:focus ~ .menu{
+		display: block;
 	}
-
-} */
-
-/* Tablet portrait */
-/* @media(max-width:800px){
-	:root{
-		font-size:9px;
+	.menu__first-item{
+		width: 374px;
+		display: flex;
+		position: absolute;
+		right: 0;
+		align-items: flex-end;
+    flex-direction: column;
 	}
-
-} */
-
-/* Smartphones */
-/* @media(max-width:550px){
-	:root{
-		font-size:7px;
-		--content-padding:1rem;
-	}
-
-} */
+}

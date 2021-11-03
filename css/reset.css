@@ -39,3 +39,10 @@ a{
 a:active,a:focus{
 	outline:none;
 } 
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}

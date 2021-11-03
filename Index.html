@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,54 +10,61 @@
   <link rel="stylesheet" href="css/reset.css">
   <!-- Global project settings/общие настройки -->
   <link rel="stylesheet" href="css/globals.css">
-  <!-- Setting for gadget/для гаджетов -->
-  <link rel="stylesheet" href="css/media queries.css">
   <!-- Basic stylse/основные стили-->
   <link rel="stylesheet" href="css/main.css">
+  <!-- Setting for gadget/для гаджетов -->
+  <link rel="stylesheet" href="css/media queries.css">
 
   <title>Document</title>
 </head>
+
 <body>
   <!-- Header-page start -->
   <!-- here is the logo, menu(nav), phone, burger -->
   <header class="header">
     <div class="header__container container">
+       <!-- burger -->
+      <button class="header__burger">
+        <a href="#" class="burger--back"></a>
+      </button>
       <!-- logo -->
       <div class="logo">
-        <a href="#" class="logo--img">
-          <picture width="46" height="46">
-            <source srcset="logo/logo.svg" type="image/svg">
-            <img src="logo/logo.png" alt="myImage" class="logo__img">
-          </picture>
+        <a href="#" class="">
+          <img src="logo/logo.png" alt="myImage" class="logo__img">
         </a>
       </div>
       <!-- Menu (nav) -->
       <nav class="menu">
         <ul class="menu__first-item">
-          <li class=" menu__item"><a href="#" class="">Главная</a></li>
-          <li class=" menu__item"><a href="#" class="">Основное меню</a>
+          <li class=""><a href="#" class="">Главная</a></li>
+          <li class=""><a href="#" class="chapter">Основное меню</a>
             <!-- Submenu -->
             <ul class="menu__second-item">
-              <li class="menu__item">
-                <a href="#" class="">Заказать вёрстку</a></li>
-              <li class="menu__item">
-                <a href="#" class="">Отправить макет на проверку</a></li>
-              <li class="menu__item">
-                <a href="#" class="">Хочу работать у вас</a></li>
-              <li class="menu__item">
-                <a href="#" class="">Есть предложение по работе с клиентами</a>
+              <li class="">
+                <a href="#" class="menu__item">Заказать вёрстку</a>
+              </li>
+              <li class="">
+                <a href="#" class="menu__item">Отправить макет на проверку</a>
+              </li>
+              <li class="">
+                <a href="#" class="menu__item">Хочу работать у вас</a>
+              </li>
+              <li class="chapter__second">
+                <a href="#" class="menu__item">Есть предложение по работе с клиентами</a>
                 <!-- submenu-adge -->
-                  <ul class="menu__third-item">
-                    <li class="menu__item">
-                      <a href="#" class="">У меня есть оффер</a></li>
-                    <li class="menu__item">
-                      <a href="#" class="">Сделать партнёром</a></li>
-                  </ul>
+                <ul class="menu__third-item">
+                  <li class="">
+                    <a href="#" class="menu__item">У меня есть оффер</a>
+                  </li>
+                  <li class="">
+                    <a href="#" class="menu__item">Сделать партнёром</a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </li>
-          <li class="menu__item"><a href="#" class="">Наши сервисы</a></li>
-          <li class="menu__item"><a href="#" class="">Контакты</a></li>
+          <li class=""><a href="#" class="">Наши сервисы</a></li>
+          <li class=""><a href="#" class="">Контакты</a></li>
         </ul>
       </nav>
       <!-- phone -->
@@ -64,10 +72,8 @@
         <img src="icon/phone.svg" alt="">
         <a href="tel.+13212223333" class="phone__number">+1 (321) 222 - 33 -33</a>
       </div>
-      <!-- burger -->
-        <button class="header__burger">
-          <a href="#" class="burger--back"></a>
-        </button>
+     
+      
     </div>
   </header>
   <!-- Header-page end -->
@@ -82,4 +88,5 @@
   </section>
 
 </body>
+
 </html>

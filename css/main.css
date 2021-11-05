@@ -30,8 +30,11 @@ order: 1;
 .logo__img {
   margin: 15px 0;
 }
+/* menu start */
 .menu{
   order: 2;
+  z-index: 99999;
+
 }
 a {
   padding: 34px 0;
@@ -61,15 +64,26 @@ border-radius: 8px;
   height: 80px;
   align-items: center;
 }
-.chapter::after,
-.chapter__second::after{
+/* list menu marker start*/
+.menu__first-item>li>a::after,
+.menu__second-item>li>a::after{
   content: '';
   position: absolute;
   border: 5px solid transparent;
   border-bottom: 6px solid #F2994A;
   margin-left: 8px;
   margin-top: 3px;
+  z-index: 999;
 }
+.menu__second-item>li>a::after{
+  margin-left: -45px;
+}
+.menu__first-item>li>a:only-child::after,
+.menu__second-item>li>a:only-child::after{
+  content: "";
+  display: none;
+}
+/* list menu marker end*/
 
 .chapter__second{
   padding-right: 38px;
@@ -86,11 +100,11 @@ border-radius: 8px;
 .menu__second-item:hover{
   display: block;
 }
-.menu__item:focus ~ .menu__third-item{
+.menu__item:hover ~ .menu__third-item{
   display: block;
 }
 .menu__second-item {
-  /* display: none; */
+  display: none;
   position: absolute;
   background: #252830;
   top: 80px;
@@ -106,9 +120,10 @@ border-radius: 8px;
   bottom: 160px;
   border: 16px solid transparent;
   border-bottom: 14px solid #252830;
+  
  }
 .menu__third-item {
-  /* display: none; */
+  display: none;
   left: 342px;
   position: absolute;
   background: #252830;
@@ -118,7 +133,7 @@ border-radius: 8px;
   height: 80px;
 }
 
-.menu__third-item::after{
+.menu__third-item::before{
   content: '';
   position: absolute;
   left: -29px;
@@ -126,6 +141,8 @@ border-radius: 8px;
   border: 16px solid transparent;
   border-right: 14px solid #252830;
  }
+ /* menu end */
+
 .phone {
   order: 3;
 }
@@ -133,9 +150,10 @@ border-radius: 8px;
   margin-left: 13px;
   margin-right: 5px;
 }
-/* burger menu deactiveted in desctop version */
+
+/* burger menu deactiveted in desctop version start */
 .header__burger {
-  /* display: none; */
+  display: none;
   width: 22px;
   height: 12px;
   border-top: 2px solid #FAFAFA;
@@ -163,7 +181,8 @@ border-radius: 8px;
 .burger--back {
 }
 /* burger menu end */
-.top-blok {
+
+.top-block {
   background-image: url(../img/alpaca.jpg);
   background-size: cover;
   background-repeat: no-repeat;
